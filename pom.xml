@@ -68,15 +68,6 @@
             <artifactId>spring-security-test</artifactId>
             <scope>test</scope>
         </dependency>
-
-
-        <dependency>
-            <groupId>io.gatling.highcharts</groupId>
-            <artifactId>gatling-charts-highcharts</artifactId>
-            <version>3.3.0</version>
-            <scope>test</scope>
-        </dependency>
-
     </dependencies>
 
     <build>
@@ -85,24 +76,6 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-
-            <plugin>
-                <groupId>io.gatling</groupId>
-                <artifactId>gatling-maven-plugin</artifactId>
-                <version>3.0.4</version>
-                <configuration>
-                    <configFolder>src/test/gatling/conf</configFolder>
-                    <resultsFolder>target/gatling/results</resultsFolder>
-                    <simulationsFolder>src/test/gatling/simulations</simulationsFolder>
-                    <runMultipleSimulations>true</runMultipleSimulations>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>net.alchim31.maven</groupId>
-                <artifactId>scala-maven-plugin</artifactId>
-                <version>4.2.4</version>
-            </plugin>
-
         </plugins>
     </build>
 
