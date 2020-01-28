@@ -1,0 +1,1 @@
+INSERT INTO users SET enabled=true, username="admin", password="$2a$10$odpNohyVE9Lp99YSEAmAluDRwd66dq2K.zDrvXW.iiSdlperqF9B2";
