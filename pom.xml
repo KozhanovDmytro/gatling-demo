@@ -98,18 +98,6 @@
                 <artifactId>scala-maven-plugin</artifactId>
                 <version>4.2.4</version>
             </plugin>
-            <plugin>
-                <groupId>io.gatling.frontline</groupId>
-                <artifactId>frontline-maven-plugin</artifactId>
-                <version>1.0.3</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>package</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
     </build>
 
