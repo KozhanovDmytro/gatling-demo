@@ -1,0 +1,19 @@
+version: '3'
+volumes:
+  gatling-database:
+
+services:
+  db:
+    image: mysql:8.0.17
+    container_name: gatling-database
+    ports:
+    - 3306:3306
+    environment:
+    - MYSQL_ROOT_PASSWORD=root
+    - MYSQL_DATABASE=gatlingDemo
+    volumes:
+    - gatling-database:/var
+    logging:
+      options:
+        max-size: "1m"
+        max-file: "3"
